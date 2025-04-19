@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgEsGa = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgEsGa = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <g fontSize={12}>
       <path fill="#fff" fillRule="evenodd" d="M0 0h640v480H0z" />
       <path fill="#09c" d="M640 410.1 91.7-.1H0v68.4L550.4 480H640z" />

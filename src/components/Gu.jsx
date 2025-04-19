@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgGu = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgGu = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <path fill="#be0027" fillRule="evenodd" d="M0 0h640v480H0z" />
     <path fill="#3b5aa3" fillRule="evenodd" d="M25.6 27.3h589.5v428.4H25.6z" />
     <path

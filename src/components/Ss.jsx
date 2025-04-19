@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgSs = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgSs = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <path fill="#078930" d="M0 336h640v144H0z" />
     <path fill="#fff" d="M0 144h640v192H0z" />
     <path fill="#000001" d="M0 0h640v144H0z" />

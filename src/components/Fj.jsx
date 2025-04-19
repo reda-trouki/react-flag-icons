@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgFj = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgFj = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <path fill="#68bfe5" d="M0 0v480h640V0z" />
     <g strokeMiterlimit={4.8}>
       <path

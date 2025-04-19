@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgGbWls = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgGbWls = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <path fill="#00ab39" d="M0 240h640v240H0z" />
     <path fill="#fff" d="M0 0h640v240H0z" />
     <g stroke="#000" strokeWidth={1.4}>

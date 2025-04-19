@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgSy = (props) => (
+const SvgSy = ({size=24, ...props}) => (
   <svg
+    width={size}
+    height={size}
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     viewBox="0 0 640 480"

@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgEh = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgEh = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <defs>
       <clipPath id="eh_svg__a">
         <path fillOpacity={0.7} d="M-158.7 0H524v512h-682.7z" />

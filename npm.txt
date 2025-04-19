@@ -1,0 +1,14 @@
+-->Updating Your Package
+    When making updates:
+
+    Increment the version in package.json following semantic versioning:
+
+        =>npm version patch for bug fixes (0.0.1 → 0.0.2)
+
+        =>npm version minor for new features (0.1.0 → 0.2.0)
+
+        =>npm version major for breaking changes (1.0.0 → 2.0.0)
+
+        Then publish again:
+
+        =>npm publish

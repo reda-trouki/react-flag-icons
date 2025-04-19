@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgKn = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgKn = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <defs>
       <clipPath id="kn_svg__a">
         <path fillOpacity={0.7} d="M-80.1 0h682.7v512H-80.1z" />

@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgLy = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgLy = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <defs>
       <clipPath id="ly_svg__a">
         <path d="M166.7-20h666.6v500H166.7z" />

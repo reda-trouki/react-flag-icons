@@ -6,7 +6,7 @@
     "dist"
   ],
   "scripts": {
-    "build:icons": "svgr --ext jsx -d src/components src/icons",
+    "build:icons": "svgr --ext jsx -d src/components src/icons && node add-size-props.js",
     "build": "npm run build:icons && rollup -c",
     "prepublishOnly": "npm run build"
   },

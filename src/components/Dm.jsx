@@ -1,6 +1,8 @@
 import * as React from "react";
-const SvgDm = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+const SvgDm = ({size=24, ...props}) => (
+  <svg
+    width={size}
+    height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
     <defs>
       <clipPath id="dm_svg__a">
         <path fillOpacity={0.7} d="M-85 0h682.7v512H-85z" />
