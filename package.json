@@ -2,11 +2,13 @@
   "name": "react-flag-icons",
   "version": "1.0.5",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build:icons": "svgr --ext jsx -d src/components src/icons && node add-size-props.js",
+    "build:icons": "svgr --ext tsx -d src/components src/icons && node add-size-props.js",
     "build": "npm run build:icons && rollup -c",
     "prepublishOnly": "npm run build"
   },

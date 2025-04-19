@@ -4,7 +4,7 @@ const path = require('path');
 // Get all JSX files in the components directory
 const componentsDir = path.join(__dirname, 'src', 'components');
 const files = fs.readdirSync(componentsDir)
-  .filter(file => file.endsWith('.jsx'));
+  .filter(file => file.endsWith('.tsx'));
 
 console.log(`Found ${files.length} component files to process`);
 
@@ -21,7 +21,7 @@ files.forEach(file => {
   // Replace the component function signature and add width/height props
   content = content.replace(
     /const (Svg[A-Za-z]+) = \(props\) => \(/g, 
-    'const $1 = ({size=24, ...props}) => ('
+    'const $1 = ({size=24, ...props}: {size?: number } & react.SVGProps<SVGSVGElement>) => ('
   );
   
   content = content.replace(

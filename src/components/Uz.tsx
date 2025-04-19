@@ -1,0 +1,61 @@
+import * as React from "react";
+const SvgUz = ({size=24, ...props}: {size?: number } & react.SVGProps<SVGSVGElement>) => (
+  <svg
+    width={size}
+    height={size}
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 640 480"
+    {...props}
+  >
+    <path fill="#1eb53a" d="M0 320h640v160H0z" />
+    <path fill="#0099b5" d="M0 0h640v160H0z" />
+    <path fill="#ce1126" d="M0 153.6h640v172.8H0z" />
+    <path fill="#fff" d="M0 163.2h640v153.6H0z" />
+    <circle cx={134.4} cy={76.8} r={57.6} fill="#fff" />
+    <circle cx={153.6} cy={76.8} r={57.6} fill="#0099b5" />
+    <g fill="#fff" transform="translate(261.1 122.9)scale(1.92)">
+      <g id="uz_svg__e">
+        <g id="uz_svg__d">
+          <g id="uz_svg__c">
+            <g id="uz_svg__b">
+              <path id="uz_svg__a" d="M0-6-1.9-.3 1 .7" />
+              <use
+                xlinkHref="#uz_svg__a"
+                width="100%"
+                height="100%"
+                transform="scale(-1 1)"
+              />
+            </g>
+            <use
+              xlinkHref="#uz_svg__b"
+              width="100%"
+              height="100%"
+              transform="rotate(72)"
+            />
+          </g>
+          <use
+            xlinkHref="#uz_svg__b"
+            width="100%"
+            height="100%"
+            transform="rotate(-72)"
+          />
+          <use
+            xlinkHref="#uz_svg__c"
+            width="100%"
+            height="100%"
+            transform="rotate(144)"
+          />
+        </g>
+        <use xlinkHref="#uz_svg__d" width="100%" height="100%" y={-24} />
+        <use xlinkHref="#uz_svg__d" width="100%" height="100%" y={-48} />
+      </g>
+      <use xlinkHref="#uz_svg__e" width="100%" height="100%" x={24} />
+      <use xlinkHref="#uz_svg__e" width="100%" height="100%" x={48} />
+      <use xlinkHref="#uz_svg__d" width="100%" height="100%" x={-48} />
+      <use xlinkHref="#uz_svg__d" width="100%" height="100%" x={-24} />
+      <use xlinkHref="#uz_svg__d" width="100%" height="100%" x={-24} y={-24} />
+    </g>
+  </svg>
+);
+export default SvgUz;
