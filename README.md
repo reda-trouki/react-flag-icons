@@ -2,7 +2,7 @@
 
 A comprehensive collection of SVG flag icons as React components.
 
-![Overview of all flags](./images/overview.png)
+<!-- ![Overview of all flags](./images/overview.png) -->
 
 [![npm version](https://img.shields.io/npm/v/react-flag-icons.svg)](https://www.npmjs.com/package/react-flag-icons)
 [![license](https://img.shields.io/npm/l/react-flag-icons.svg)](https://github.com/reda-trouki/react-flag-icons/blob/main/LICENSE)
