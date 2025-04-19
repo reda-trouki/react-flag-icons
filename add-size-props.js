@@ -4,7 +4,7 @@ const path = require('path');
 // Get all JSX files in the components directory
 const componentsDir = path.join(__dirname, 'src', 'components');
 const files = fs.readdirSync(componentsDir)
-  .filter(file => file.endsWith('.jsx') && file !== 'Ad.jsx');
+  .filter(file => file.endsWith('.jsx'));
 
 console.log(`Found ${files.length} component files to process`);
 
