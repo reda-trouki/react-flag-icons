@@ -114,7 +114,6 @@ export { default as Hu } from "./Hu";
 export { default as Ic } from "./Ic";
 export { default as Id } from "./Id";
 export { default as Ie } from "./Ie";
-export { default as Il } from "./Il";
 export { default as Im } from "./Im";
 export { default as In } from "./In";
 export { default as Io } from "./Io";
