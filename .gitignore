@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+update-components.ps1
+react-flag-icons-1.0.0.tgz
+icons/
